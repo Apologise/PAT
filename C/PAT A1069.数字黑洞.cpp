@@ -14,7 +14,7 @@ bool cmp(int a, int b){
 }
 
 void toArray(int N, int num[]){
-	for(int i = 3; i >= 0; --i){
+	for(int i = 3; i >= 0; i++){
 		num[i] = N%10;
 		N /= 10;
 	}

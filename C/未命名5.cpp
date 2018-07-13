@@ -9,7 +9,7 @@ int main(){
 	int len = strlen(result_temp);
 	int count = 0, j = 0;
 	for(int i = len-1; i >= 0;){
-		if(count == 3){
+		if(count == 3 && result_temp[i] != '-'){
 			result[j++] = ',';
 			count = 0;
 		}else{

@@ -5,8 +5,8 @@ int main(){
 	int  a, b;
 	char result_temp[100], result[100];
 	scanf("%d %d", &a, &b);
-	sprintf(result_temp, "%d", a+b);
-	int len = strlen(result_temp);
+	sprintf(result, "%d", a+b);
+	int len = strlen(result);
 	int count = 0, j = 0;
 	for(int i = len-1; i >= 0;){
 		if(count == 3){
@@ -19,8 +19,6 @@ int main(){
 		}
 	}
 	result[j] = '\0';
-	for(int i = strlen(result)-1; i >= 0; i--){
-		printf("%c", result[i]);
-	}
+	printf("%s", result);
 	return 0;
 } 
